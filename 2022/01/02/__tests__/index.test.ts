@@ -52,7 +52,7 @@ test.each([
     expected: 139940,
   },
 ])(
-  "returns total number of calories carried by the top three elves carrying the most calories",
+  "returns total number of calories carried by the top three elves carrying the most calories ($name)",
   ({ input, expected }) => {
     const answer = solution(input);
 
