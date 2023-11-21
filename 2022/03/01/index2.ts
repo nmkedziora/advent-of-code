@@ -98,7 +98,7 @@ export function solution(input: string) {
       break;
     }
   }
-  
+
   prioritiesSum += priorities.get(duplicatedItem)!;
 
   return prioritiesSum;

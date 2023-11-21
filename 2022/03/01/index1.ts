@@ -74,18 +74,18 @@ export function solution(input: string[]) {
 
   for (let i = 0; i < input.length; i++) {
     let duplicatedItem = "";
-    
+
     const items = input[i];
     const half = items.length / 2;
 
     const firstCompartment = items.slice(0, half);
     const secondCompartment = new Set(items.slice(half));
-    
+
     // find sets intersection
     for (let j = 0; j < firstCompartment.length; j++) {
       const item = firstCompartment[j];
-      
-      if(secondCompartment.has(item)) {
+
+      if (secondCompartment.has(item)) {
         duplicatedItem = item;
         break;
       }
