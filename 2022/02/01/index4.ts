@@ -57,34 +57,34 @@ export function solution(input: string): number {
 
   let totalScore = 0;
 
-    if (input === "A X") {
-      totalScore = totalScore + outcomeScore.draw;
-      totalScore = totalScore + shapeScore.X;
-    } else if (input === "B Y") {
-      totalScore = totalScore + outcomeScore.draw;
-      totalScore = totalScore + shapeScore.Y;
-    } else if (input === "C Z") {
-      totalScore = totalScore + outcomeScore.draw;
-      totalScore = totalScore + shapeScore.Z;
-    } else if (input === "A Z") {
-      totalScore = totalScore + outcomeScore.lose;
-      totalScore = totalScore + shapeScore.Z;
-    } else if (input === "B X") {
-      totalScore = totalScore + outcomeScore.lose;
-      totalScore = totalScore + shapeScore.X;
-    } else if (input === "C Y") {
-      totalScore = totalScore + outcomeScore.lose;
-      totalScore = totalScore + shapeScore.Y;
-    } else if (input === "C X") {
-      totalScore = totalScore + outcomeScore.win;
-      totalScore = totalScore + shapeScore.X;
-    } else if (input === "B Z") {
-      totalScore = totalScore + outcomeScore.win;
-      totalScore = totalScore + shapeScore.Z;
-    } else if (input === "A Y") {
-      totalScore = totalScore + outcomeScore.win;
-      totalScore = totalScore + shapeScore.Y;
-    }
+  if (input === "A X") {
+    totalScore = totalScore + outcomeScore.draw;
+    totalScore = totalScore + shapeScore.X;
+  } else if (input === "B Y") {
+    totalScore = totalScore + outcomeScore.draw;
+    totalScore = totalScore + shapeScore.Y;
+  } else if (input === "C Z") {
+    totalScore = totalScore + outcomeScore.draw;
+    totalScore = totalScore + shapeScore.Z;
+  } else if (input === "A Z") {
+    totalScore = totalScore + outcomeScore.lose;
+    totalScore = totalScore + shapeScore.Z;
+  } else if (input === "B X") {
+    totalScore = totalScore + outcomeScore.lose;
+    totalScore = totalScore + shapeScore.X;
+  } else if (input === "C Y") {
+    totalScore = totalScore + outcomeScore.lose;
+    totalScore = totalScore + shapeScore.Y;
+  } else if (input === "C X") {
+    totalScore = totalScore + outcomeScore.win;
+    totalScore = totalScore + shapeScore.X;
+  } else if (input === "B Z") {
+    totalScore = totalScore + outcomeScore.win;
+    totalScore = totalScore + shapeScore.Z;
+  } else if (input === "A Y") {
+    totalScore = totalScore + outcomeScore.win;
+    totalScore = totalScore + shapeScore.Y;
+  }
 
   return totalScore;
 }

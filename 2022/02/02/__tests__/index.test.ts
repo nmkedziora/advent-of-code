@@ -29,5 +29,5 @@ test.each([
     const result = solution(input);
 
     expect(result).toEqual(expected);
-  }
+  },
 );

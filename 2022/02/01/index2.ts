@@ -42,7 +42,6 @@ lineReader.on("close", function () {
 type Elf = "A" | "B" | "C";
 type Me = "X" | "Y" | "Z";
 
-
 export function solution(input: string): number {
   const shapeScore = {
     X: 1,
